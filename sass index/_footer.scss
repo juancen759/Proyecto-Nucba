@@ -1,0 +1,150 @@
+                            .footer-top {
+                                width: 100%;
+                                height: 200px;
+                                clip-path: polygon(100% 0, 0 0, 100% 56%);
+                                background-color: $color02;
+                                position: absolute;
+                                top: 0px;
+                                @extend %color-background;
+                            }
+                            
+                            .footer-bootom {
+                                width: 100%;
+                                height: 200px;
+                                clip-path: polygon(100% 0, 0 50%, 40% 99%);
+                                background-color: $color02;
+                                position: absolute;
+                                @extend %color-background;
+                                top: 110px;
+                            }
+                            
+                            .footer {
+                                width: 100%;
+                                background-color: $color06;
+                                height: 500px;
+                                position: relative;
+                                @extend %alineacion;
+                                .container-footer {
+                                    @extend %contenedor;
+                                    display: grid;
+                                    grid-template-columns: 33% 30% 33%;
+                                    padding: 10px;
+                                    @media (max-width: 1000px) {
+                                        width: 100%;
+                                        left: 0px;
+                                        top: 130px;
+                                        display: block;
+                                    }
+                                    //Las redes sociales tienen un hover!!
+                                    .redes-sociales {
+                                        padding-top: 15px;
+                                        padding-left: 15px;
+                                        @media (max-width: 1000px) {
+                                            display: grid;
+                                            grid-template-columns: repeat(5, 20%);
+                                        }
+                                        i {
+                                            color: #ccc;
+                                            font-size: 40px;
+                                            padding-left: 10px;
+                                            margin-top: 5px;
+                                            @media (max-width: 1000px) {
+                                                padding-left: 45px;
+                                            }
+                                            @media (max-width: 450px) {
+                                                padding-left: 10px;
+                                            }
+                                        }
+                                        h3 {
+                                            @extend %subtitulos;
+                                            @media (max-width: 1000px) {
+                                                display: none;
+                                            }
+                                        }
+                                        .overlay {
+                                            display: block;
+                                            width: 200px;
+                                            height: 40px;
+                                            font-family: $fuente01;
+                                            font-weight: bold;
+                                            letter-spacing: 1px;
+                                            padding: 5px;
+                                            text-align: center;
+                                            color: #fff;
+                                            margin-left: 70px;
+                                            margin-top: -40px;
+                                            transform: translateX(-80%);
+                                            opacity: 0;
+                                            transition: all 800ms;
+                                            @media (max-width: 1000px) {
+                                                transform: translateY(-40%);
+                                                margin-left: -30px;
+                                                width: 150px;
+                                            }
+                                            @media (max-width: 600px) {
+                                                width: 150px;
+                                                margin-left: -25px;
+                                            }
+                                        }
+                                        .facebook,
+                                        .instagram,
+                                        .twitter,
+                                        .whatsapp,
+                                        .youtube {
+                                            .overlay {
+                                                &:hover {
+                                                    cursor: pointer;
+                                                    opacity: 0.8;
+                                                    transform: translateX(0%);
+                                                    background-color: $color06;
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .parrafo-footer {
+                                        padding-right: 20px;
+                                        @media (max-width: 1000px) {
+                                            padding-right: 0px;
+                                            padding-top: 40px;
+                                            padding-bottom: 40px;
+                                            border-top: 1px solid black;
+                                            border-bottom: 1px solid black;
+                                        }
+                                        .logo {
+                                            width: 100%;
+                                            height: 60px;
+                                            display: block;
+                                            i {
+                                                font-size: 150px;
+                                                color: #fff;
+                                                @extend %alineacion;
+                                                margin-top: -40px;
+                                                @media (max-width: 800px) {
+                                                    margin-top: 0px;
+                                                }
+                                            }
+                                        }
+                                        p {
+                                            @extend %parrafos;
+                                            margin-top: 50px;
+                                            line-height: 25px;
+                                        }
+                                    }
+                                    .ubicacion {
+                                        padding: 10px;
+                                        h3 {
+                                            @extend %subtitulos;
+                                        }
+                                        iframe {
+                                            margin-left: 40px;
+                                            margin-top: 30px;
+                                            @media (max-width: 1200px) {
+                                                margin-left: 0px;
+                                            }
+                                            @media (max-width: 1000px) {
+                                                width: 100%;
+                                            }
+                                        }
+                                    }
+                                }
+                            }

@@ -1,0 +1,156 @@
+.main-sesion {
+  background-image: url(/imagenes/Ticket.jpg);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.boton-sesion {
+  width: 150px;
+  height: 40px;
+  border-radius: 20px;
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.main-sesion .banner h3, .formulario-sesion {
+  background: #c31432;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#240b36), to(#c31432));
+  background: linear-gradient(to right, #240b36, #c31432);
+}
+
+.main-sesion .banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-sesion .banner h3 {
+  text-align: center;
+  font-family: "Otomanopee One", sans-serif;
+  color: #fff;
+  font-size: 24px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+.main-sesion {
+  position: relative;
+}
+
+.main-sesion .banner {
+  border: 2px solid white;
+  width: 100%;
+  height: 200px;
+  position: relative;
+  top: 40px;
+}
+
+.main-sesion .banner h3 {
+  font-family: "Raleway", sans-serif;
+  font-weight: lighter;
+  font-size: 18px;
+  margin-top: -240px;
+  width: 100%;
+  height: 40px;
+  padding-top: 5px;
+}
+
+.main-sesion .banner i {
+  font-size: 300px;
+  color: white;
+  position: absolute;
+}
+
+@media (max-width: 800px) {
+  .main-sesion .banner i {
+    font-size: 200px;
+  }
+}
+
+.formulario-sesion {
+  width: 30%;
+  height: 35%;
+  border: solid 1px #fff;
+  display: block;
+  margin: 0 auto;
+  opacity: 0.8;
+  border-radius: 15px;
+  margin-top: 100px;
+}
+
+@media (max-width: 800px) {
+  .formulario-sesion {
+    width: 50%;
+  }
+}
+
+@media (max-width: 400px) {
+  .formulario-sesion {
+    width: 100%;
+  }
+}
+
+.grupo {
+  position: relative;
+  margin: 30px;
+}
+
+.grupo input {
+  background: none;
+  color: #c6c6c6;
+  font-size: 15px;
+  padding: 10px;
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+.grupo input:focus {
+  outline: none;
+  color: #fff;
+}
+
+.grupo input:focus ~ label,
+.grupo input:valid ~ label {
+  top: -14px;
+  font-size: 13px;
+  color: #2196f3;
+}
+
+.grupo input:focus ~ .barra::before {
+  width: 100%;
+}
+
+.grupo label {
+  color: #fff;
+  font-size: 16px;
+  position: absolute;
+  font-family: "Raleway", sans-serif;
+  top: 10px;
+  left: 5px;
+  -webkit-transition: 0.5s ease all;
+  transition: 0.5s ease all;
+}
+
+.boton-sesion {
+  display: block;
+  margin: 0 auto;
+}
+/*# sourceMappingURL=iniciar.sesion.css.map */

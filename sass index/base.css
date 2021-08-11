@@ -1,0 +1,985 @@
+header {
+  display: block;
+}
+
+header .titulo {
+  border: 2px solid white;
+  width: 100%;
+  height: 200px;
+  position: relative;
+  top: 150px;
+}
+
+header .titulo i {
+  font-size: 300px;
+  color: #fff;
+}
+
+@media (max-width: 800px) {
+  header .titulo i {
+    font-size: 200px;
+  }
+}
+
+header .titulo span {
+  position: absolute;
+  font-family: "Raleway", sans-serif;
+  color: white;
+  font-size: 16px;
+  z-index: 1000;
+  top: 7px;
+  font-weight: bold;
+  -webkit-text-stroke: 0.5px black;
+}
+
+@media (max-width: 800px) {
+  header .titulo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+header .boton-Registrar {
+  margin-top: 250px;
+}
+
+@media (max-width: 800px) {
+  header .boton-Registrar {
+    margin-top: 200px;
+  }
+}
+
+header .boton-Registrar .boton a {
+  text-decoration: none;
+  color: white;
+}
+
+.barraNavegacion {
+  width: 100%;
+  height: 50px;
+  position: relative;
+  position: fixed;
+  z-index: 1000;
+}
+
+.barraNavegacion .btn-iniciarsesion {
+  position: absolute;
+  z-index: 1000;
+  height: 100%;
+  top: 5px;
+  left: 50px;
+}
+
+.barraNavegacion .btn-iniciarsesion button {
+  background-color: black;
+}
+
+.barraNavegacion .btn-iniciarsesion button a {
+  text-decoration: none;
+  color: white;
+}
+
+.barraNavegacion .btn-iniciarsesion button a:hover {
+  background-color: black;
+  color: yellow;
+  cursor: pointer;
+}
+
+@media (max-width: 800px) {
+  .barraNavegacion {
+    position: absolute;
+    height: 50px;
+  }
+}
+
+.menu {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 800px) {
+  .menu {
+    width: 40%;
+    display: block;
+    right: 100%;
+    margin: 0;
+    height: calc(100% - 80px);
+    z-index: 1000;
+    position: fixed;
+  }
+}
+
+.menu ul {
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 800px) {
+  .menu ul {
+    display: block;
+    width: 100%;
+    padding: 0px;
+  }
+}
+
+.menu ul li {
+  width: 30%;
+  height: 100%;
+  padding-top: 7px;
+  border-right: 1px white solid;
+  text-align: center;
+  list-style: none;
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  color: #fff;
+  font-weight: bold;
+}
+
+@media (max-width: 800px) {
+  .menu ul li {
+    width: 100%;
+    border: none;
+    height: 40px;
+    margin-top: 0px;
+    border-bottom: 1px solid white;
+  }
+}
+
+.menu ul li:hover {
+  cursor: pointer;
+  background-color: white;
+  color: #FF00FF;
+  font-size: 15px;
+  -webkit-transition: 3ms;
+  transition: 3ms;
+}
+
+@media (max-width: 800px) {
+  .menu ul li:hover {
+    background-color: white;
+    width: 100%;
+    border-radius: 0px;
+  }
+}
+
+.menu-bars {
+  display: block;
+  position: relative;
+  top: -35px;
+  left: 0px;
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .menu-bars {
+    display: block;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    background-color: black;
+  }
+}
+
+@media (max-width: 800px) {
+  .menu-bars i {
+    float: right;
+    font-size: 30px;
+  }
+}
+
+.menu-bars .bt-menu {
+  display: block;
+  padding: 20px;
+  color: #fff;
+  overflow: hidden;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+header .titulo, header .boton-Registrar, .portada, .portada .contenedor-portada, .galeria, .galeria-invitados, .invitados-sabado,
+.invitados-domingo, .ticket, .ticket .contenedor-card-tickets, .footer, .footer .container-footer .parrafo-footer .logo i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.portada h1 {
+  font-family: "Otomanopee One", sans-serif;
+  font-size: 95px;
+  text-align: right;
+  color: white;
+  width: 100%;
+  line-height: 170px;
+  margin-left: -50px;
+}
+
+@media (max-width: 800px) {
+  .portada h1 {
+    font-size: 60px;
+    text-align: center;
+    margin-left: 0px;
+    line-height: 90px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .portada h1 {
+    font-size: 75px;
+    width: 100%;
+    margin-left: -38px;
+  }
+}
+
+@media (max-width: 400px) {
+  .portada h1 {
+    font-size: 50px;
+    line-height: 70px;
+  }
+}
+
+header .boton-Registrar .boton, .barraNavegacion, .menu, .menu-bars, .absolute, .absolute-top, .ticket-top, .bottom-ticket, .card-ticket .btn-comprar, .footer-top, .footer-bootom, body {
+  background: #c31432;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#240b36), to(#c31432));
+  background: linear-gradient(to right, #240b36, #c31432);
+}
+
+.galeria-invitados .contenedor-invitados h3, .Subtitulo h3, .card-ticket h4, .footer .container-footer .redes-sociales h3, .footer .container-footer .ubicacion h3 {
+  text-align: center;
+  font-family: "Otomanopee One", sans-serif;
+  color: #fff;
+  font-size: 24px;
+}
+
+.portada p, .Subtitulo p, .card-ticket span, .footer .container-footer .parrafo-footer p {
+  font-family: "Raleway", sans-serif;
+  color: #fff;
+  font-size: 15px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+header .boton-Registrar .boton, .barraNavegacion .btn-iniciarsesion button, .card-ticket .btn-comprar {
+  width: 150px;
+  height: 40px;
+  border-radius: 20px;
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.galeria-invitados .contenedor-invitados, .ticket .contenedor-card-tickets, .footer .container-footer {
+  width: 75%;
+  height: 83%;
+  top: 40px;
+  position: absolute;
+  opacity: 0.9;
+  z-index: 700;
+  background-image: linear-gradient(106.9deg, #940e3c 60.9%, #03161b 122.3%);
+  box-shadow: 0px 5px 19px 4px rgba(236, 246, 248, 0.75);
+  -webkit-box-shadow: 0px 5px 19px 4px rgba(236, 246, 248, 0.75);
+}
+
+header {
+  background-image: url(/imagenes/Ticket.jpg);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.portada {
+  height: 100%;
+  margin: 0 auto;
+  margin-top: 30px;
+  border-top: solid 4px black;
+}
+
+.portada h1 {
+  font-size: 35px;
+  width: 80%;
+  height: 10%;
+  line-height: 70px;
+  text-align: center;
+  -webkit-text-stroke: 1px black;
+}
+
+@media (max-width: 400px) {
+  .portada h1 {
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 800px) {
+  .portada h1 {
+    width: 100%;
+    padding-top: 10px;
+    line-height: 40px;
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 800px) {
+  .portada p {
+    line-height: 20px;
+    padding-top: 30px;
+  }
+}
+
+.portada .contenedor-portada {
+  margin-top: 20px;
+  height: 100%;
+}
+
+@media (max-width: 800px) {
+  .portada .contenedor-portada {
+    display: block;
+  }
+}
+
+.card-portada {
+  border: solid 3px #FF00FF;
+  padding: 13px;
+  margin-left: 10px;
+  border-radius: 15px;
+  text-align: center;
+  background-color: black;
+  opacity: 0.7;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+  overflow: hidden;
+}
+
+@media (max-width: 800px) {
+  .card-portada {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+}
+
+.card-portada:hover {
+  background-color: #FF00FF;
+  cursor: pointer;
+  border: solid 3px black;
+}
+
+.card-portada:hover i {
+  color: black;
+  font-size: 80px;
+  -webkit-animation: showIcon 300ms linear;
+          animation: showIcon 300ms linear;
+}
+
+.card-portada:hover p {
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+  -webkit-animation: showParrafo 400ms linear;
+          animation: showParrafo 400ms linear;
+}
+
+.card-portada:hover h4 {
+  color: black;
+  -webkit-animation: showTituloCard 400ms linear;
+          animation: showTituloCard 400ms linear;
+}
+
+.card-portada i {
+  font-size: 65px;
+  color: #FF00FF;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+
+.card-portada h4 {
+  font-family: "Otomanopee One", sans-serif;
+  color: #fff;
+  padding-top: 20px;
+  -webkit-transition: all 400ms;
+  transition: all 400ms;
+}
+
+.card-portada p {
+  text-align: center;
+  -webkit-transition: all 400ms;
+  transition: all 400ms;
+}
+
+@-webkit-keyframes showIcon {
+  from {
+    -webkit-transform: translateY(-200%);
+            transform: translateY(-200%);
+  }
+  to {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+@keyframes showIcon {
+  from {
+    -webkit-transform: translateY(-200%);
+            transform: translateY(-200%);
+  }
+  to {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+@-webkit-keyframes showTituloCard {
+  from {
+    -webkit-transform: translateY(-300%);
+            transform: translateY(-300%);
+    color: #fff;
+  }
+  to {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    color: black;
+  }
+}
+
+@keyframes showTituloCard {
+  from {
+    -webkit-transform: translateY(-300%);
+            transform: translateY(-300%);
+    color: #fff;
+  }
+  to {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    color: black;
+  }
+}
+
+@-webkit-keyframes showParrafo {
+  from {
+    -webkit-transform: translateX(-300%);
+            transform: translateX(-300%);
+    color: #fff;
+  }
+  to {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+@keyframes showParrafo {
+  from {
+    -webkit-transform: translateX(-300%);
+            transform: translateX(-300%);
+    color: #fff;
+  }
+  to {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+  margin-top: 30px;
+}
+
+.main h1 {
+  font-family: "Otomanopee One", sans-serif;
+  font-size: 30px;
+  color: #fff;
+  text-align: center;
+  -webkit-text-stroke: 1px black;
+  padding-bottom: 20px;
+}
+
+.galeria {
+  width: 100%;
+  height: 90%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (340px)[3];
+      grid-template-columns: repeat(3, 340px);
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+}
+
+@media (max-width: 800px) {
+  .galeria {
+    -ms-grid-columns: 2fr 2fr;
+        grid-template-columns: 2fr 2fr;
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    height: 100%;
+    margin-left: 5px;
+  }
+}
+
+@media (max-width: 450px) {
+  .galeria {
+    -ms-grid-columns: 3fr;
+        grid-template-columns: 3fr;
+    -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    height: 100%;
+    margin-left: 10px;
+  }
+}
+
+.galeria img {
+  width: 95%;
+  height: 95%;
+  border-radius: 20px;
+  box-shadow: 9px 5px 18px 5px rgba(16, 14, 16, 0.75);
+  -webkit-box-shadow: 9px 5px 18px 5px rgba(16, 14, 16, 0.75);
+  -moz-box-shadow: 9px 5px 18px 5px rgba(16, 14, 16, 0.75);
+}
+
+.galeria-invitados {
+  width: 100%;
+  height: 550px;
+  position: relative;
+  background-color: black;
+  margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+  .galeria-invitados {
+    height: 900px;
+    top: 0px;
+  }
+}
+
+@media (max-width: 800px) {
+  .galeria-invitados .contenedor-invitados {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .galeria-invitados .contenedor-invitados {
+    height: 780px;
+    top: 25px;
+    background: black;
+  }
+}
+
+.invitados-sabado,
+.invitados-domingo {
+  margin-top: 5px;
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .invitados-sabado,
+  .invitados-domingo {
+    height: 50%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+  }
+}
+
+.card-invitado {
+  width: 24%;
+  height: 190px;
+  position: relative;
+  margin-left: 5px;
+}
+
+@media (max-width: 600px) {
+  .card-invitado {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.card-invitado img {
+  width: 100%;
+  height: 100%;
+}
+
+.card-invitado img:hover {
+  cursor: pointer;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+@media (max-width: 600px) {
+  .card-invitado img {
+    width: 100%;
+  }
+}
+
+.card-invitado span {
+  position: absolute;
+  color: yellow;
+  z-index: 1000;
+  width: 100%;
+  left: 0px;
+  bottom: 0px;
+  font-family: "Raleway", sans-serif;
+  font-size: 17px;
+  background-color: black;
+  opacity: 0.9;
+  text-align: center;
+  font-weight: bold;
+}
+
+.absolute {
+  width: 100%;
+  height: 80px;
+  -webkit-clip-path: polygon(100% 0%, 0% 100%, 100% 100%);
+          clip-path: polygon(100% 0%, 0% 100%, 100% 100%);
+  position: absolute;
+  bottom: 0px;
+}
+
+.absolute-top {
+  width: 100%;
+  height: 120px;
+  position: absolute;
+  -webkit-clip-path: polygon(0 0, 0% 54%, 100% 0);
+          clip-path: polygon(0 0, 0% 54%, 100% 0);
+  top: 0px;
+  border-bottom: 2px solid #FF00FF;
+}
+
+.ticket-top {
+  position: absolute;
+  width: 100%;
+  height: 160px;
+  -webkit-clip-path: polygon(0 100%, 0 39%, 100% 38%);
+          clip-path: polygon(0 100%, 0 39%, 100% 38%);
+  top: -63px;
+}
+
+.bottom-ticket {
+  position: absolute;
+  width: 100%;
+  height: 160px;
+  -webkit-clip-path: polygon(100% 100%, 0 100%, 100% 38%);
+          clip-path: polygon(100% 100%, 0 100%, 100% 38%);
+  bottom: 0px;
+}
+
+.ticket {
+  width: 100%;
+  height: 550px;
+  position: relative;
+  background-color: black;
+  margin-top: 40px;
+}
+
+@media (max-width: 800px) {
+  .ticket .contenedor-card-tickets {
+    display: block;
+    height: 100%;
+  }
+}
+
+.Subtitulo {
+  width: 80%;
+  height: 15%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.Subtitulo h3 {
+  padding-top: 65px;
+}
+
+@media (max-width: 600px) {
+  .Subtitulo h3 {
+    padding-top: 50px;
+  }
+}
+
+.Subtitulo p {
+  padding-top: 10px;
+}
+
+.card-ticket {
+  width: 35%;
+  height: 75%;
+  border: solid 2px yellow;
+  margin: 0 auto;
+  margin-left: 10px;
+  background-color: black;
+  opacity: 0.8;
+  position: relative;
+  border-radius: 5%;
+}
+
+@media (max-width: 800px) {
+  .card-ticket {
+    height: 32%;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 5px;
+  }
+}
+
+.card-ticket h4 {
+  margin-top: 10px;
+}
+
+.card-ticket span {
+  display: block;
+  font-size: 40px;
+  color: yellow;
+  font-weight: bold;
+  margin-top: 60px;
+}
+
+@media (max-width: 800px) {
+  .card-ticket span {
+    margin-top: -25px;
+  }
+}
+
+.card-ticket .btn-comprar {
+  height: 35px;
+  width: 80%;
+  padding: 0px;
+  color: white;
+  position: absolute;
+  bottom: 20px;
+  left: 10%;
+}
+
+.footer-top {
+  width: 100%;
+  height: 200px;
+  -webkit-clip-path: polygon(100% 0, 0 0, 100% 56%);
+          clip-path: polygon(100% 0, 0 0, 100% 56%);
+  background-color: #FF00FF;
+  position: absolute;
+  top: 0px;
+}
+
+.footer-bootom {
+  width: 100%;
+  height: 200px;
+  -webkit-clip-path: polygon(100% 0, 0 50%, 40% 99%);
+          clip-path: polygon(100% 0, 0 50%, 40% 99%);
+  background-color: #FF00FF;
+  position: absolute;
+  top: 110px;
+}
+
+.footer {
+  width: 100%;
+  background-color: black;
+  height: 500px;
+  position: relative;
+}
+
+.footer .container-footer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 33% 30% 33%;
+      grid-template-columns: 33% 30% 33%;
+  padding: 10px;
+}
+
+@media (max-width: 1000px) {
+  .footer .container-footer {
+    width: 100%;
+    left: 0px;
+    top: 130px;
+    display: block;
+  }
+}
+
+.footer .container-footer .redes-sociales {
+  padding-top: 15px;
+  padding-left: 15px;
+}
+
+@media (max-width: 1000px) {
+  .footer .container-footer .redes-sociales {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (20%)[5];
+        grid-template-columns: repeat(5, 20%);
+  }
+}
+
+.footer .container-footer .redes-sociales i {
+  color: #ccc;
+  font-size: 40px;
+  padding-left: 10px;
+  margin-top: 5px;
+}
+
+@media (max-width: 1000px) {
+  .footer .container-footer .redes-sociales i {
+    padding-left: 45px;
+  }
+}
+
+@media (max-width: 450px) {
+  .footer .container-footer .redes-sociales i {
+    padding-left: 10px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .footer .container-footer .redes-sociales h3 {
+    display: none;
+  }
+}
+
+.footer .container-footer .redes-sociales .overlay {
+  display: block;
+  width: 200px;
+  height: 40px;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 5px;
+  text-align: center;
+  color: #fff;
+  margin-left: 70px;
+  margin-top: -40px;
+  -webkit-transform: translateX(-80%);
+          transform: translateX(-80%);
+  opacity: 0;
+  -webkit-transition: all 800ms;
+  transition: all 800ms;
+}
+
+@media (max-width: 1000px) {
+  .footer .container-footer .redes-sociales .overlay {
+    -webkit-transform: translateY(-40%);
+            transform: translateY(-40%);
+    margin-left: -30px;
+    width: 150px;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer .container-footer .redes-sociales .overlay {
+    width: 150px;
+    margin-left: -25px;
+  }
+}
+
+.footer .container-footer .redes-sociales .facebook .overlay:hover,
+.footer .container-footer .redes-sociales .instagram .overlay:hover,
+.footer .container-footer .redes-sociales .twitter .overlay:hover,
+.footer .container-footer .redes-sociales .whatsapp .overlay:hover,
+.footer .container-footer .redes-sociales .youtube .overlay:hover {
+  cursor: pointer;
+  opacity: 0.8;
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  background-color: black;
+}
+
+.footer .container-footer .parrafo-footer {
+  padding-right: 20px;
+}
+
+@media (max-width: 1000px) {
+  .footer .container-footer .parrafo-footer {
+    padding-right: 0px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+  }
+}
+
+.footer .container-footer .parrafo-footer .logo {
+  width: 100%;
+  height: 60px;
+  display: block;
+}
+
+.footer .container-footer .parrafo-footer .logo i {
+  font-size: 150px;
+  color: #fff;
+  margin-top: -40px;
+}
+
+@media (max-width: 800px) {
+  .footer .container-footer .parrafo-footer .logo i {
+    margin-top: 0px;
+  }
+}
+
+.footer .container-footer .parrafo-footer p {
+  margin-top: 50px;
+  line-height: 25px;
+}
+
+.footer .container-footer .ubicacion {
+  padding: 10px;
+}
+
+.footer .container-footer .ubicacion iframe {
+  margin-left: 40px;
+  margin-top: 30px;
+}
+
+@media (max-width: 1200px) {
+  .footer .container-footer .ubicacion iframe {
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .footer .container-footer .ubicacion iframe {
+    width: 100%;
+  }
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+@media (max-width: 800px) {
+  body {
+    padding-top: 70px;
+  }
+}
+/*# sourceMappingURL=base.css.map */

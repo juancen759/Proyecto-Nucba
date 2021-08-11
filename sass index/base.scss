@@ -1,0 +1,32 @@
+//variables
+//colores Animacion
+$color01: violet;
+$color02:#FF00FF;
+$color03:#800080;
+$color04:#018749;
+$color05:#008B8B;
+$color06: black;
+// fuentes
+$fuente01: 'Raleway',
+sans-serif;
+$fuente02: 'Otomanopee One',
+sans-serif;
+//Importaciones
+@import 'header';
+@import 'herencias';
+@import 'portada';
+@import 'main';
+@import 'footer';
+//Utilidades Generales
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    @extend %color-background;
+    @media (max-width: 800px) {
+        padding-top: 70px;
+    }
+}

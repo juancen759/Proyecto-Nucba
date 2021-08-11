@@ -1,0 +1,82 @@
+%alineacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+%fuente-titulo {
+    font-family: $fuente02;
+    font-size: 95px;
+    text-align: right;
+    color: white;
+    width: 100%;
+    line-height: 170px;
+    margin-left: -50px;
+    @media (max-width: 800px) {
+        font-size: 60px;
+        text-align: center;
+        margin-left: 0px;
+        line-height: 90px;
+    }
+    @media(max-width: 1200px) {
+        font-size: 75px;
+        width: 100%;
+        margin-left: -38px;
+    }
+    @media(max-width: 400px) {
+        font-size: 50px;
+        line-height: 70px;
+    }
+}
+
+%color-background {
+    background: #c31432;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #240b36, #c31432);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #240b36, #c31432);
+}
+
+%subtitulos {
+    text-align: center;
+    font-family: $fuente02;
+    color: #fff;
+    font-size: 24px;
+}
+
+%parrafos {
+    font-family: $fuente01;
+    color: #fff;
+    font-size: 15px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+%botonsito {
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    font-family: $fuente01;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+%contenedor {
+    width: 75%;
+    height: 83%;
+    top: 40px;
+    position: absolute;
+    opacity: 0.9;
+    z-index: 700;
+    background-image: linear-gradient( 106.9deg, rgba(148, 14, 60, 1) 60.9%, rgba(3, 22, 27, 1) 122.3%);
+    box-shadow: 0px 5px 19px 4px rgba(236, 246, 248, 0.75);
+    -webkit-box-shadow: 0px 5px 19px 4px rgba(236, 246, 248, 0.75);
+}
+
+%background-image {
+    background-image: url(/imagenes/Ticket.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
